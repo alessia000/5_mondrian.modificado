@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            border: 5px solid black;
+                display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+        }
+        .m{
+            padding: 2em;
+            background: pink;
+            border: 5px solid black;
+        }
+        .m1{
+            background: red;
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+        .m2{
+            background: green;
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        .m3{
+            background: yellow;
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        .m4{
+            background: white;
+            grid-column: span 4;
+            grid-row: span 5;
+        }
+        .m5{
+            background: blue;
+            grid-column: span 3;
+            grid-row: span 5;
+        }
+        .m6{
+            background: purple;
+            grid-column: span 3;
+            grid-row: span 6;
+        }
+        .m7{
+            background: purple;
+            grid-column: span 6;
+            grid-row: span 3;
+        }
+        .m8{
+            background: pink;
+            grid-column: span 1;
+            grid-row: span 8;
+        }
+        .m9{
+            background: white;
+            grid-column: span 3;
+            grid-row: span 6;
+        }
+        .m10{
+            background: blue;
+            grid-column: span 6;
+            grid-row: span 5;
+        }
+        .m11{
+            background: green;
+            grid-column: span 3;
+            grid-row: span 10;
+        }
+        .m12{
+            background: white;
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+        .m13{
+            background: orange;
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+        .m14{
+            background: red;
+            grid-column: span 4;
+            grid-row: span 10;
+        }
+        .m15{
+            background: white;
+            grid-column: span 3;
+            grid-row: span 5;
+        }
+        
+        @media (max-device-width:480px){
+            body{
+                background: red;
+            }
+            .container{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+            }
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="m m1">1</div>
+       <div class="m m2">2</div>
+       <div class="m m3">3</div>
+       <div class="m m4">4</div>
+       <div class="m m5">5</div>
+       <div class="m m6">6</div>
+       <div class="m m7">7</div>
+       <div class="m m8">8</div>
+       <div class="m m9">9</div>
+       <div class="m m10">10</div>
+       <div class="m m11">11</div>
+       <div class="m m12">12</div>
+       <div class="m m13">13</div>
+       <div class="m m14">14</div>
+       <div class="m m15">15</div>
+       
+    </div>
+</body>
+</html>
